@@ -105,3 +105,50 @@ h1 {
   background-color: #1F1F1F;
   color: white
 }
+
+
+.running-line {
+  height: 60px;
+  background-color: #F54932;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.running-line .text {
+  color: white;
+  display: flex;
+  white-space: nowrap;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  animation: text-running-animation 30s linear infinite;
+}
+
+.running-line .text span{
+  margin-right: 35px;
+}
+
+.running-line .text span::after{
+  display: inline-block;
+  content: "";
+  position: relative;
+  width: 6px;
+  height: 6px;
+  left: 17px;
+  bottom: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@keyframes text-running-animation {
+  0%{
+    transform: translateZ(0);
+  }
+  100%{
+    transform: translate3d(-100%, 0 ,0);
+  }
+  
+}
