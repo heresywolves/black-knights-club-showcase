@@ -173,7 +173,8 @@ h1 {
   max-width: 1366px;
   font-family: 'Merriweather', sans-serif;
   color: #313131;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-2 .content-container {
@@ -364,4 +365,135 @@ h1 {
   position: absolute;
   right: -63px;
   top: 350px;
+}
+
+.section-5 .content-container {
+  padding: 99px 72px;
+}
+
+.section-5 h2 {
+  text-transform: uppercase;
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.section-5 .navigation-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  bottom: 57px;
+  gap: 15px;
+  width: 151px;
+  margin-left: auto;
+}
+
+.section-5 .navigation-buttons-container button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #313131;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.section-5 .navigation-buttons-container button:hover {
+  background-color: #FBCE51;
+}
+
+
+.section-5 .navigation-buttons-container button:disabled {
+  background-color: #D6D6D6;
+  cursor: auto;
+}
+
+.section-5 .navigation-buttons-container button.left img{
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+.section-5 .navigation-buttons-container button.right img{
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.section-5 .navigation-buttons-container p {
+  color: #838383;
+  position: relative;
+  right: 1px;
+}
+
+.section-5 .navigation-buttons-container .total {
+  margin-right: 1px;
+  margin-left: 2px;
+}
+
+.section-5 .navigation-buttons-container .current {
+  margin-right: 4px;
+  color: #313131;
+}
+
+.section-5 .slider {
+  font-family: 'Golos Text', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-5 .slider-item-container {
+  overflow: hidden;
+  padding-top: 14px;
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
+.section-5 .moving-wrapper {
+  transition: transform 1s ease-in-out;
+  display: flex;
+  gap: 94px;
+}
+
+
+.section-5 .slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-5 .slider-item .name {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 28px;
+  margin-right: 1px;
+}
+
+.section-5 .slider-item:nth-child(3) .name {
+  margin-left: 9px;
+}
+
+.section-5 .slider-item .status {
+  font-size: 20px;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  color: #838383;
+}
+
+.section-5 .slider-item button {
+  width: 113px;
+  height: 35px;
+  border-radius: 17px;
+  font-size: 16px;
+  border: 1px solid #3057A2;
+  color: #3057A2;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.section-5 .slider-item button:hover {
+  background-color: #3057A2;
+  color: white;
 }
