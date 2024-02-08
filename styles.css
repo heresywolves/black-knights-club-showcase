@@ -23,8 +23,48 @@ h1 {
   width: 100vw;
   background-color: #E9DED4;
   height: 700px;
-  background-image: url("./Assets/section-1-graphics.png");
-  background-position-x: center;
+  position: relative;
+}
+
+.section-1 .sun {
+  position: absolute;
+  z-index: 1;
+  top: -64px;
+  left: 50%;
+  animation: rotation 50s infinite linear;
+}
+
+.section-1 .city {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(calc(-50% + 12px));
+}
+
+.section-1 .pieces {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(calc(-50% + 398px));
+}
+
+.section-1 .texture {
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  mix-blend-mode: color-burn;
+}
+
+@keyframes rotation {
+  from {
+    transform: translateX(calc(-50% + 321px)) rotate(0deg);
+  }
+  to {
+    transform: translateX(calc(-50% + 321px)) rotate(359deg);
+  }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -200,6 +240,7 @@ h1 {
 .section-2 img {
   margin-left: auto;
   max-width: 394px;
+  height: 250px;
 }
 
 .section-3 .content-container{
@@ -309,8 +350,17 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min(112px) min(112px) 1fr;
-  padding-top: 53px;
+  padding-top: 54px;
   gap: 20px;
+}
+
+@media (max-width:1365px) { 
+  .section-4 .renovation-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    padding-top: 53px;
+    gap: 20px;
+  }
 }
 
 .section-4 .renovation-grid .element-container {
@@ -510,4 +560,24 @@ footer {
   padding: 41px 72px;
   color: #3131319c;
   line-height: 120%;
+}
+
+@media (max-width: 1224px) {
+  .section-1 {
+    background-position-x: center;
+    background-size: 1500px;
+  }
+
+  .section-1 h1 {
+    font-size: 36px;
+  }
+
+  .section-1 .text-container {
+    transform: translateX(0);
+    width: 375px;
+  }
+  .section-1 logo {
+    left: 500px;
+  }
+  
 }
