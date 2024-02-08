@@ -31,6 +31,15 @@ h1 {
   .section-1 {
     border-right: 1px solid #60544B;
   }
+
+  .section-1-logo {
+    margin-left: -1px;
+  }
+
+  .section-1 .text-container .buttons-container {
+    gap: 16px;
+    margin-left: -1px;
+  }
 }
 
 .section-1 .text-container {
