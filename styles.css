@@ -42,12 +42,24 @@ h1 {
   transform: translateX(calc(-50% + 12px));
 }
 
-.section-1 .pieces {
+.section-1 .knight-mobile {
+  display: none;
+}
+
+.section-1 .knight {
   z-index: 3;
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(calc(-50% + 398px));
+  transform: translateX(calc(-50% + 251px));
+}
+
+.section-1 .pawn {
+  z-index: 3;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(calc(-50% + 598px));
 }
 
 .section-1 .king {
@@ -126,6 +138,10 @@ h1 {
   z-index: 4;
   width: 544px;
   color: #313131;
+}
+
+.section-1 .text-container .line-break {
+  display: none;
 }
 
 .section-1 h1 {
@@ -605,20 +621,109 @@ footer {
 
   .section-1 h1 {
     font-size: 36px;
+    margin-top: 38px;
+  }
+
+  .section-1 h1 .text-indentation-1 {
+    margin-left: 64px;
+  }
+
+  .section-1 h1 .text-indentation-2 {
+    margin-left: 30px;
   }
 
   .section-1 .text-container {
     transform: translateX(0);
     width: 375px;
+    padding: 21px;
+    padding-top: 18px;
+    padding-right: 18px;
   }
 
-  .section-1 logo {
-    left: 500px;
+  .section-1 .section-1-info-text {
+    text-align: start;
+    line-height: 128%;
+  }
+
+  .section-1 .text-container .line-break {
+    display: inline;
+  }
+
+  .section-1 .section-1-logo img{
+    width: 213px;
+    /* left: 500px; */
+  }
+
+  .section-1 .pawn {
+    display: none;
+  }
+
+  .section-1 .knight {
+    display: none;
+  }
+
+  .section-1 .knight-mobile {
+    z-index: 3;
+    position: absolute;
+    bottom: -22px;;
+    left: 50%;
+    transform: translateX(calc(-50% + 8px));
+    display: block;
   }
 
   .section-1 .city {
-    width: 900px;
-    left: 20px;
+    width: 890px;
+    transform: translateX(-592px);
   }
+
+  .section-1 .sun {
+    width: 350px;
+    transform: translateX(-185px) !important;
+    top: 400px;
+  }
+
+
+  .section-1 .buttons-container {
+    flex-direction: column;
+    padding-left: 1px !important;
+    position: relative;
+    bottom: 9px;
+    gap: 14px !important;
+  }
+
+  .section-1 button {
+    height: 47px !important;
+  }
+
+  .section-1 button.more-info {
+    border: 1px solid white;
+    background-color: white !important;
+  }
+
+  .section-1 button.more-info:hover {
+    border: 2px solid #1F1F1F;
+    color: #1F1F1F !important; 
+  }
+
+  .section-1 button br{
+    display: none;
+  }
+
+  .section-1 .king {
+    width: 60px;
+    transform: translateX(-124px) !important;
+    bottom: 110px;
+  }
+
+  .section-1 .queen {
+    width: 60px;
+    transform: translateX(42px) rotate(7deg) !important;
+    bottom: 165px;
+  }
+
+  .running-line {
+    position: relative;
+    z-index: 4;
+
   
 }
