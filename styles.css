@@ -28,7 +28,7 @@ h1 {
 
 .section-1 .sun {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: -64px;
   left: 50%;
   animation: rotation 50s infinite linear;
@@ -48,6 +48,40 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translateX(calc(-50% + 398px));
+}
+
+.section-1 .king {
+  z-index: 1;
+  position: absolute;
+  bottom: 164px;
+  left: 50%;
+  transform: translateX(calc(-50% + 112px));
+  animation: tilt-shaking 15s infinite linear;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: translateX(calc(-50% + 112px)) rotate(10deg); }
+  25% { transform: translateX(calc(-50% + 112px)) rotate(0deg); }
+  50% { transform: translateX(calc(-50% + 112px)) rotate(-10deg); }
+  75% { transform: translateX(calc(-50% + 112px)) rotate(0deg); }
+  100% { transform: translateX(calc(-50% + 112px)) rotate(10deg); }
+}
+
+.section-1 .queen {
+  z-index: 1;
+  position: absolute;
+  bottom: 269px;
+  left: 50%;
+  transform: translateX(calc(-50% + 452px));
+  animation: tilt-shaking2 15s infinite linear;
+}
+
+@keyframes tilt-shaking2 {
+  0% { transform: translateX(calc(-50% + 452px)) rotate(0deg); }
+  25% { transform: translateX(calc(-50% + 452px)) rotate(10deg); }
+  50% { transform: translateX(calc(-50% + 452px)) rotate(0deg); }
+  75% { transform: translateX(calc(-50% + 452px)) rotate(-10deg); }
+  100% { transform: translateX(calc(-50% + 452px)) rotate(0deg); }
 }
 
 .section-1 .texture {
@@ -420,11 +454,11 @@ h1 {
 }
 
 .section-5 .content-container {
-  padding: 99px 72px;
+  padding: 98px 72px;
 }
 
 .section-5 {
-  padding-bottom: 41px;
+  padding-bottom: 42px;
 }
 
 .section-5 h2 {
@@ -566,8 +600,7 @@ footer {
 
 @media (max-width: 1224px) {
   .section-1 {
-    background-position-x: center;
-    background-size: 1500px;
+    height: 774px;
   }
 
   .section-1 h1 {
@@ -578,8 +611,14 @@ footer {
     transform: translateX(0);
     width: 375px;
   }
+
   .section-1 logo {
     left: 500px;
+  }
+
+  .section-1 .city {
+    width: 900px;
+    left: 20px;
   }
   
 }
