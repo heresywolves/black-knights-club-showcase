@@ -279,6 +279,10 @@ h1 {
   padding-top: 80px;
 }
 
+.section-2 .content-container p br{
+  display: none;
+}
+
 .section-2 p {
   max-width: 750px;
   padding-top: 27px;
@@ -317,7 +321,11 @@ h1 {
   padding-left: 20px;
 }
 
-.section-3 table{
+.section-3 .mobile-version {
+  display: none;
+}
+
+.section-3 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 60px;
@@ -724,6 +732,133 @@ footer {
   .running-line {
     position: relative;
     z-index: 4;
+    height: 38px;
+  }
 
+  .running-line .text {
+    font-size: 16px !important;
+  }
+
+  .section-2 .content-container {
+    font-size: 28px !important;
+    flex-direction: column;
+    padding: 0px 20px;
+    padding-top: 21px;
+    position: relative;
+  }
+
+  .section-2 .content-container p br{
+    display: block;
+    margin-bottom: 262px;
+  }
+
+  .section-2 img {
+    width: 335px;
+    height: 212px;
+    position: absolute;
+    top: 224px;
+    left: 50%;
+    transform: translateX(calc(-50% - 2px));
+  }
+
+  .section-3 .content-container {
+    grid-template-columns: 1fr;
+    padding-right: 0px;
+    gap: 0px;
+  }
+
+  .section-3 .content-container img {
+    width: 375px;
+  }
+
+  .section-3 .content-container .img-container {
+    padding-left: 0px;
+    padding-top: 35px;
+  }
+
+  .section-3 p {
+    font-size: 28px;
+    line-height: 136%;
+  }
+
+  .section-3 tr {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+  }
+
+  .section-3 .mobile-version {
+    display: flex;
+  }
+
+  .section-3 .pc-version {
+    display: none;
+  }
+
+  .section-3 table td {
+    display: inline;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  .section-3 table tr td:first-child {
+    margin-top: 15px !important;
+  }
+
+  .section-3 table tr:first-child td:first-child {
+    margin-top: 0px !important;
+  }
   
+  .section-3 table tr:nth-child(3) {
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .section-3 table tr:nth-child(3) td{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .section-3 table tr:nth-child(3) td:first-child{
+    width: 153px;
+  }
+
+  .section-3 table tr:last-child {
+    border: none;
+  }
+
+  .section-3 table {
+    border-collapse: collapse;
+    white-space: normal; 
+    width: 335px;
+    margin-top: 44px;
+  }
+
+  .section-3 td.bold {
+    white-space: nowrap;
+    padding-left: 0px !important;
+    /* padding-top: 32px !important; */
+    margin-bottom: 15px;
+  }
+
+  .section-3 table td, .section-3 table th {
+    border: none;
+  }
+
+  .section-3 table tr {
+    border-bottom: 2px solid #D0D0D0;
+  }
+
+  .section-3 .right-side-container {
+    padding-top: 0px;
+    margin-top: -40px;
+  }
+
+  .section-3 p.contact-info {
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 120%;
+  }
+
 }
