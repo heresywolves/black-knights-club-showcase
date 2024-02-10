@@ -1107,7 +1107,14 @@ footer {
     background-color: #D9D9D9;
   }
 
+  .section-5 {
+    padding-bottom: 50px;
+  }
 
+  footer {
+    padding: 40px 20px;
+    height: 220px;
+  }
 
 
 
