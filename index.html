@@ -34,11 +34,17 @@
           организации Международного васюкинского турнира по шахматам
         </p>
         <div class="buttons-container">
-          <button class="support">
+          <button
+            class="support"
+            onClick="document.getElementById('support').scrollIntoView();"
+          >
             Поддержать<br />
             шахматную мысль
           </button>
-          <button class="more-info">
+          <button
+            class="more-info"
+            onClick="document.getElementById('tournament-info').scrollIntoView();"
+          >
             Подробнее<br />
             о турнире
           </button>
@@ -57,7 +63,7 @@
         <span>лед тронулся, господа присяжные заседатели!</span>
       </div>
     </div>
-    <section class="section-2">
+    <section class="section-2" id="support">
       <div class="content-container">
         <p>
           Чтобы поддержать Международный васюкинский турнир <br />
@@ -118,7 +124,7 @@
         </div>
       </div>
     </section>
-    <section class="section-4">
+    <section class="section-4" id="tournament-info">
       <div class="content-container">
         <div class="header-container">
           <h2>
