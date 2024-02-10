@@ -1,9 +1,9 @@
 const slider = (() => {
-  const sliderContainer = document.querySelector('.slider');
-  const leftButton = sliderContainer.querySelector('button.left');
-  const rightButton = sliderContainer.querySelector('button.right');
-  const currentSlidesEl = sliderContainer.querySelector('span.current');
-  const movingWrapper = sliderContainer.querySelector('.moving-wrapper');
+  const sliderContainer = document.querySelector('.section-5 .slider');
+  const leftButton = sliderContainer.querySelector('.section-5 button.left');
+  const rightButton = sliderContainer.querySelector('.section-5 button.right');
+  const currentSlidesEl = sliderContainer.querySelector('.section-5 span.current');
+  const movingWrapper = sliderContainer.querySelector('.section-5 .moving-wrapper');
 
   let currentSlides = currentSlidesEl.textContent;
   const TOTALSLIDES = 6;

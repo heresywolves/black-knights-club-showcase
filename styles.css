@@ -398,6 +398,10 @@ h1 {
   font-family: 'Golos Text', sans-serif;
 }
 
+.section-4 .renovation-slider {
+  display: none;
+}
+
 .section-4 .header-addition {
   display: inline-block;
   position: relative;
@@ -937,6 +941,70 @@ footer {
     left: 8px;
     transform: rotate(-3.5deg);
   }
+
+  .section-4 .renovation-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    width: 178px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .section-4 .renovation-slider button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: #313131;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+
+  .section-4 .renovation-slider button:hover {
+    background-color: #FBCE51;
+  }
+
+  .section-4 .renovation-slider .page-circle {
+    background-color: #D9D9D9;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+
+  .section-4 .renovation-slider .page-circle.active {
+    background-color: #313131;
+  }
+
+  .section-4 .renovation-slider button img {
+    width: 9px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transform: none;
+  }
+
+  .section-4 .renovation-slider button.left {
+    margin-right: 10px;
+  }
+
+  .section-4 .renovation-slider button.right {
+    margin-left: 10px;
+  }
+
+  .section-4 .renovation-slider button.left img {
+    left: -1px;
+    top: 1px;
+  }
+
+  .section-4 .renovation-slider button.right img {
+    left: 2px;
+    top: 1px;
+  }
+
 
 
 
