@@ -894,6 +894,7 @@ footer {
     grid-template-rows: 300px;
     padding-top: 148px;
     position: relative;
+    transition: 1s;
   }
 
   .section-4 .renovation-grid .element-container {
@@ -963,8 +964,17 @@ footer {
     transition: 0.1s;
   }
 
+  .section-4 .renovation-slider button:disabled {
+    background-color: #D9D9D9;
+    cursor: auto;
+  }
+
   .section-4 .renovation-slider button:hover {
     background-color: #FBCE51;
+  }
+
+  .section-4 .renovation-slider button:hover:disabled {
+    background-color: #D9D9D9;
   }
 
   .section-4 .renovation-slider .page-circle {
@@ -1005,7 +1015,15 @@ footer {
     top: 1px;
   }
 
+  .section-4 .renovation-grid .element-container:nth-child(7) {
+    padding-right: 30px;
+    width: 334px;
+  }
 
+  .section-4 .content-container {
+    max-width: 335px;
+    overflow: hidden;
+  }
 
 
 }
