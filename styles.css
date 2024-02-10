@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 button, table {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .section-1 {
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #E9DED4;
   height: 700px;
   position: relative;
@@ -761,6 +761,10 @@ footer {
   }
 
   .section-2 .content-container p br{
+    /* display: block; */
+  }
+
+  .section-2 .content-container p span.line-break {
     display: block;
     margin-bottom: 262px;
   }
