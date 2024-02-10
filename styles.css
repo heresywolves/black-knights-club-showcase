@@ -28,6 +28,7 @@ h1 {
   background-color: #E9DED4;
   height: 700px;
   position: relative;
+  overflow: hidden;
 }
 
 .section-1 .sun {
