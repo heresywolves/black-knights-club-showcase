@@ -500,6 +500,7 @@ h1 {
   text-transform: uppercase;
   font-size: 54px;
   font-weight: 500;
+  padding-right: 160px;
 }
 
 .section-5 .navigation-buttons-container {
@@ -565,6 +566,16 @@ h1 {
   font-family: 'Golos Text', sans-serif;
   margin-left: auto;
   margin-right: auto;
+  /* min-width: 1222px; */
+}
+
+@media (max-width: 1350px) {
+  .section-5 .slider-item-container {
+    /* min-width: 1222px; */
+    max-width: 840px !important; 
+    margin-left: auto;
+    margin-right: auto
+  }
 }
 
 .section-5 .slider-item-container {
@@ -644,7 +655,7 @@ footer {
   line-height: 120%;
 }
 
-@media (max-width: 1224px) {
+@media (max-width: 530px) {
   .content-container {
     max-width: 375px;
   }
