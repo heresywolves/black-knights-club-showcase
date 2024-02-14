@@ -8,7 +8,7 @@ const sliderComponent = () => {
   const pageDisplay = document.querySelector('.slider span.current')
   let timer;
 
-  if (screenWidth < 750) {
+  if (screenWidth < 930) {
     offsetDistance = 360;
     if (timer) {
       clearInterval(timer);
@@ -87,9 +87,7 @@ const sliderComponent = () => {
     window.addEventListener('resize', function() {
       screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-      if (screenWidth < 940) {
         this.location.reload();
-      }
     });
 
 
