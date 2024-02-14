@@ -691,7 +691,7 @@ footer {
   }
 }
 
-@media (max-width: 1150px) and (min-width: 750px) {
+@media (max-width: 1150px) and (min-width: 930px) {
   .section-3 .content-container {
     grid-template-columns: 1fr;
     padding-left: 20px;

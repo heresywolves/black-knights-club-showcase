@@ -1,5 +1,5 @@
 const sliderComponent = () => {
-  let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  let screenWidth = window.innerwidth || document.documentElement.clientWidth || document.body.clientWidth;
   let offsetDistance;
   let initOffset;
   const slider = document.querySelector('.slider .moving-wrapper');
@@ -85,9 +85,6 @@ const sliderComponent = () => {
     });
 
     window.addEventListener('resize', function() {
-      screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-        // this.location.reload();
     });
 
 
