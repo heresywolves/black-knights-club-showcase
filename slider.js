@@ -6,11 +6,16 @@ const sliderComponent = () => {
   const prevBtn = document.querySelector('.slider button.left');
   const nextBtn = document.querySelector('.slider button.right');
   const pageDisplay = document.querySelector('.slider span.current')
+  let timer;
 
   if (screenWidth < 750) {
     offsetDistance = 360;
+    if (timer) {
+      clearInterval(timer);
+    }
   } else {
     offsetDistance = 414;
+    timer = setInterval(slideLeft, 4000);
   }
 
     initOffset = 6 * -offsetDistance; 
@@ -31,23 +36,33 @@ const sliderComponent = () => {
 
     updatePageDisplay();
 
-
-    prevBtn.addEventListener('click', () => {
-        nextBtn.disabled = true;
-        prevBtn.disabled = true;
-        page--;
-        updatePageDisplay();
-        currentIndex--;
-        updateSlider();
-    });
-
-    nextBtn.addEventListener('click', () => {
+    function slideLeft() {
         nextBtn.disabled = true;
         prevBtn.disabled = true;
         page++;
         updatePageDisplay();
         currentIndex++;
         updateSlider();
+    }
+
+    function slideRight() {
+        nextBtn.disabled = true;
+        prevBtn.disabled = true;
+        page--;
+        updatePageDisplay();
+        currentIndex--;
+        updateSlider();
+    }
+
+
+    prevBtn.addEventListener('click', () => {
+      slideRight();
+      clearInterval(timer);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      slideLeft();
+      clearInterval(timer);
     });
 
     function updateSlider() {
@@ -72,7 +87,7 @@ const sliderComponent = () => {
     window.addEventListener('resize', function() {
       screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-      if (screenWidth < 750) {
+      if (screenWidth < 940) {
         this.location.reload();
       }
     });
