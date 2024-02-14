@@ -87,7 +87,7 @@ const sliderComponent = () => {
     window.addEventListener('resize', function() {
       screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        this.location.reload();
+        // this.location.reload();
     });
 
 
