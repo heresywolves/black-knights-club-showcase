@@ -586,6 +586,13 @@ h1 {
   }
 }
 
+@media (min-width: 1390px) {
+  .section-4 img {
+    left: 50%;
+    transform: translateX(350px);
+  }
+}
+
 .section-5 .slider-item-container {
   overflow: hidden;
   padding-top: 14px;
